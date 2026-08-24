@@ -195,6 +195,90 @@
     </div>
 
 </section>
+    <!-- CONFIRMACIÓN -->
+
+<section class="confirmacion">
+
+    <div class="confirmacion-contenido">
+
+        <p class="confirmacion-pequeno">
+            QUEREMOS SABER DE VOS
+        </p>
+
+        <h2>
+            ¿NOS ACOMPAÑÁS?
+        </h2>
+
+        <p class="confirmacion-texto">
+            Confirmá tu asistencia a la celebración.
+        </p>
+
+        <div class="respuesta">
+
+            <button onclick="mostrarFormulario(true)">
+                ❤️ SÍ, VOY
+            </button>
+
+            <button onclick="mostrarFormulario(false)">
+                😢 NO PUEDO
+            </button>
+
+        </div>
+
+        <div id="formulario-asistencia" class="formulario-oculto">
+
+            <p class="pregunta">
+                ¿TENÉS ALGUNA PREFERENCIA ALIMENTARIA?
+            </p>
+
+            <div class="opciones-comida">
+
+                <label>
+                    <input type="radio" name="comida" value="Nada en especial">
+                    Nada en especial
+                </label>
+
+                <label>
+                    <input type="radio" name="comida" value="Celíaco/a">
+                    🌾 Celíaco/a
+                </label>
+
+                <label>
+                    <input type="radio" name="comida" value="Vegetariano/a">
+                    🌱 Vegetariano/a
+                </label>
+
+                <label>
+                    <input type="radio" name="comida" value="Vegano/a">
+                    🌿 Vegano/a
+                </label>
+
+            </div>
+
+            <p class="pregunta">
+                🎵 ¿QUÉ CANCIÓN TE GUSTARÍA ESCUCHAR?
+            </p>
+
+            <input
+                type="text"
+                id="cancion"
+                class="campo-cancion"
+                placeholder="Escribí una canción..."
+            >
+
+            <button class="boton-cancion" onclick="agregarCancion()">
+                🎶 AGREGAR A LA PLAYLIST
+            </button>
+
+        </div>
+
+        <div id="mensaje-no" class="mensaje-oculto">
+            💕 Gracias por avisarnos.
+        </div>
+
+    </div>
+
+</section>
     <script src="js/invitacion.js"></script>
 
 </body>

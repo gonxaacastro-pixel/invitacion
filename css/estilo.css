@@ -1,7 +1,15 @@
+/* ========================================
+   CONFIGURACIÓN GENERAL
+======================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,8 +18,14 @@ body {
     color: white;
 }
 
+
+/* ========================================
+   PORTADA
+======================================== */
+
 .pantalla {
     min-height: 100vh;
+    width: 100%;
 
     display: flex;
     justify-content: center;
@@ -22,24 +36,34 @@ body {
     padding: 30px;
 
     position: relative;
-
     overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #292929 0%,
+            #171717 45%,
+            #0b0b0b 100%
+        );
 }
 
 .contenido {
+    width: 100%;
     max-width: 700px;
 
     animation: aparecer 2s ease;
 }
 
 .pequeno {
-    font-size: 13px;
+    font-size: 12px;
 
-    letter-spacing: 6px;
+    letter-spacing: 7px;
 
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 
-    opacity: 0.75;
+    opacity: 0.7;
+
+    text-transform: uppercase;
 }
 
 h1 {
@@ -57,9 +81,17 @@ h1 {
 
     line-height: 1.7;
 
+    max-width: 550px;
+
+    margin: 0 auto;
+
     opacity: 0.8;
 }
 
+
+/* ========================================
+   ANIMACIÓN DE ENTRADA
+======================================== */
 
 @keyframes aparecer {
 
@@ -76,30 +108,23 @@ h1 {
 }
 
 
-@media (max-width: 600px) {
+/* ========================================
+   CONTADOR
+======================================== */
 
-    h1 {
-        font-size: 42px;
-    }
-
-    .pequeno {
-        font-size: 11px;
-
-        letter-spacing: 4px;
-    }
-
-    .frase {
-        font-size: 17px;
-    }
-
-}
 .contador-seccion {
     min-height: 100vh;
+    width: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     text-align: center;
+
     padding: 30px;
+
+    background: #111;
 }
 
 .contador-contenido {
@@ -108,37 +133,99 @@ h1 {
 }
 
 .contador-titulo {
-    font-size: 22px;
+    font-size: 20px;
+
     letter-spacing: 6px;
-    margin-bottom: 40px;
+
+    margin-bottom: 45px;
+
+    opacity: 0.8;
 }
 
 #contador {
+    width: 100%;
+
     display: flex;
+
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+
+    gap: 35px;
+
     flex-wrap: wrap;
 }
 
 .tiempo {
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     min-width: 100px;
 }
 
 .tiempo span {
     font-size: 55px;
+
+    font-weight: normal;
 }
 
 .tiempo small {
-    font-size: 12px;
-    letter-spacing: 3px;
     margin-top: 8px;
-    opacity: 0.7;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    opacity: 0.65;
 }
 
+
+/* ========================================
+   MENSAJE DEL DÍA DEL EVENTO
+======================================== */
+
+.evento-hoy {
+    font-size: 28px;
+
+    letter-spacing: 3px;
+}
+
+
+/* ========================================
+   CELULARES
+======================================== */
+
 @media (max-width: 600px) {
+
+    .pantalla {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 42px;
+
+        line-height: 1.2;
+    }
+
+    .pequeno {
+        font-size: 10px;
+
+        letter-spacing: 5px;
+
+        margin-bottom: 25px;
+    }
+
+    .frase {
+        font-size: 17px;
+
+        line-height: 1.6;
+    }
+
+    .contador-seccion {
+        padding: 20px;
+    }
 
     #contador {
         gap: 20px;
@@ -150,6 +237,14 @@ h1 {
 
     .tiempo span {
         font-size: 38px;
+    }
+
+    .contador-titulo {
+        font-size: 17px;
+
+        letter-spacing: 5px;
+
+        margin-bottom: 35px;
     }
 
 }

@@ -325,33 +325,3 @@ h1 {
     margin-top: 30px;
 }
 
-    <div class="ubicacion-contenido">
-
-        <p class="ubicacion-pequeno">
-            EL LUGAR
-        </p>
-
-        <h2>
-            ¿DÓNDE NOS ENCONTRAMOS?
-        </h2>
-
-        <p class="ubicacion-nombre">
-            Salón de Eventos San Rafael
-        </p>
-
-        <p class="ubicacion-direccion">
-            Las Vírgenes 200<br>
-            San Rafael, Mendoza
-        </p>
-
-        <a
-            class="boton-mapa"
-            href="https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n%20de%20Eventos%20San%20Rafael%2C%20Las%20V%C3%ADrgenes%20200%2C%20San%20Rafael%2C%20Mendoza"
-            target="_blank"
-            rel="noopener noreferrer">
-            📍 VER EN EL MAPA
-        </a>
-
-    </div>
-
-</section>

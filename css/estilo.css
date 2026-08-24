@@ -455,3 +455,144 @@ h1 {
     background: white;
     color: #111;
 }
+/* ========================================
+   CONFIRMACIÓN
+======================================== */
+
+.confirmacion {
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 70px 25px;
+
+    background: #111111;
+}
+
+.confirmacion-contenido {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.confirmacion-pequeno {
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+    opacity: 0.7;
+}
+
+.confirmacion h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.confirmacion-texto {
+    font-size: 18px;
+    opacity: 0.75;
+    margin-bottom: 35px;
+}
+
+.respuesta {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.respuesta button,
+.boton-cancion {
+    padding: 14px 25px;
+
+    background: transparent;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.respuesta button:hover,
+.boton-cancion:hover {
+    background: white;
+    color: #111;
+}
+
+.formulario-oculto,
+.mensaje-oculto {
+    display: none;
+}
+
+#formulario-asistencia {
+    margin-top: 50px;
+}
+
+.pregunta {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.opciones-comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 45px;
+}
+
+.opciones-comida label {
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.campo-cancion {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 15px;
+
+    background: transparent;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    text-align: center;
+
+    outline: none;
+
+    margin-bottom: 20px;
+}
+
+.campo-cancion::placeholder {
+    color: rgba(255,255,255,0.5);
+}
+
+.boton-cancion {
+    display: block;
+    margin: 0 auto;
+}
+
+.mensaje-oculto {
+    margin-top: 40px;
+    font-size: 18px;
+}

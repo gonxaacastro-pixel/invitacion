@@ -596,3 +596,43 @@ h1 {
     margin-top: 40px;
     font-size: 18px;
 }
+/* CORRECCIÓN DE CENTRADO - CONFIRMACIÓN */
+
+.confirmacion,
+.confirmacion-contenido {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirmacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.confirmacion-contenido {
+    max-width: 650px;
+}
+
+.respuesta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opciones-comida {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.campo-cancion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

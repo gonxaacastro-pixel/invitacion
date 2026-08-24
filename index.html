@@ -227,49 +227,61 @@
 
         <div id="formulario-asistencia" class="formulario-oculto">
 
-            <p class="pregunta">
-                ¿TENÉS ALGUNA PREFERENCIA ALIMENTARIA?
-            </p>
+    <p class="pregunta">
+        ¿CUÁL ES TU NOMBRE?
+    </p>
 
-            <div class="opciones-comida">
+    <input
+        type="text"
+        id="nombre"
+        class="campo-cancion"
+        placeholder="Escribí tu nombre..."
+    >
 
-                <label>
-                    <input type="radio" name="comida" value="Nada en especial">
-                    Nada en especial
-                </label>
+    <p class="pregunta">
+        ¿TENÉS ALGUNA PREFERENCIA ALIMENTARIA?
+    </p>
 
-                <label>
-                    <input type="radio" name="comida" value="Celíaco/a">
-                    🌾 Celíaco/a
-                </label>
+    <div class="opciones-comida">
 
-                <label>
-                    <input type="radio" name="comida" value="Vegetariano/a">
-                    🌱 Vegetariano/a
-                </label>
+        <label>
+            <input type="radio" name="comida" value="Nada en especial">
+            Nada en especial
+        </label>
 
-                <label>
-                    <input type="radio" name="comida" value="Vegano/a">
-                    🌿 Vegano/a
-                </label>
+        <label>
+            <input type="radio" name="comida" value="Celíaco/a">
+            🌾 Celíaco/a
+        </label>
 
-            </div>
+        <label>
+            <input type="radio" name="comida" value="Vegetariano/a">
+            🌱 Vegetariano/a
+        </label>
 
-            <p class="pregunta">
-                🎵 ¿QUÉ CANCIÓN TE GUSTARÍA ESCUCHAR?
-            </p>
+        <label>
+            <input type="radio" name="comida" value="Vegano/a">
+            🌿 Vegano/a
+        </label>
 
-            <input
-                type="text"
-                id="cancion"
-                class="campo-cancion"
-                placeholder="Escribí una canción..."
-            >
+    </div>
 
-            <button class="boton-cancion" onclick="agregarCancion()">
-                🎶 AGREGAR A LA PLAYLIST
-            </button>
+    <p class="pregunta">
+        🎵 ¿QUÉ CANCIÓN TE GUSTARÍA ESCUCHAR?
+    </p>
 
+    <input
+        type="text"
+        id="cancion"
+        class="campo-cancion"
+        placeholder="Escribí una canción..."
+    >
+
+    <button class="boton-cancion" onclick="enviarWhatsApp()">
+        📱 CONFIRMAR POR WHATSAPP
+    </button>
+
+</div>
         </div>
 
         <div id="mensaje-no" class="mensaje-oculto">

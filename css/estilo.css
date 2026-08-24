@@ -283,3 +283,42 @@ h1 {
     }
 
 }
+/* SECCIÓN DE BIENVENIDA */
+
+.bienvenida {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 25px;
+    box-sizing: border-box;
+    background: #111111;
+}
+
+.bienvenida-contenido {
+    max-width: 650px;
+    text-align: center;
+}
+
+.bienvenida-pequeno {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.bienvenida h2 {
+    font-size: 42px;
+    margin: 0 0 30px;
+}
+
+.bienvenida-texto {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 0 auto 25px;
+}
+
+.bienvenida-final {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+}

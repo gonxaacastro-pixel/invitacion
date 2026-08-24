@@ -248,3 +248,38 @@ h1 {
     }
 
 }
+.desliza {
+    margin-top: 55px;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    opacity: 0.55;
+
+    animation: flotar 2s ease-in-out infinite;
+}
+
+.desliza span {
+    display: block;
+
+    font-size: 20px;
+
+    margin-top: 10px;
+}
+
+
+@keyframes flotar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+}

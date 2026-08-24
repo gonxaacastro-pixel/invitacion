@@ -12,40 +12,60 @@ body {
 
 .pantalla {
     min-height: 100vh;
+
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     text-align: center;
+
     padding: 30px;
+
+    position: relative;
+
+    overflow: hidden;
 }
 
 .contenido {
+    max-width: 700px;
+
     animation: aparecer 2s ease;
 }
 
 .pequeno {
-    font-size: 18px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
+    font-size: 13px;
+
+    letter-spacing: 6px;
+
+    margin-bottom: 28px;
+
+    opacity: 0.75;
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 58px;
+
     font-weight: normal;
-    margin-bottom: 20px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
 }
 
 .frase {
-    font-size: 20px;
-    opacity: 0.85;
+    font-size: 19px;
+
+    line-height: 1.7;
+
+    opacity: 0.8;
 }
+
 
 @keyframes aparecer {
 
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(35px);
     }
 
     to {
@@ -55,14 +75,17 @@ h1 {
 
 }
 
+
 @media (max-width: 600px) {
 
     h1 {
-        font-size: 40px;
+        font-size: 42px;
     }
 
     .pequeno {
-        font-size: 14px;
+        font-size: 11px;
+
+        letter-spacing: 4px;
     }
 
     .frase {

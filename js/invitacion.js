@@ -43,3 +43,41 @@ function actualizarContador() {
 actualizarContador();
 
 setInterval(actualizarContador, 1000);
+function mostrarFormulario(viene) {
+
+    const formulario = document.getElementById("formulario-asistencia");
+    const mensajeNo = document.getElementById("mensaje-no");
+
+    if (viene) {
+
+        formulario.style.display = "block";
+        mensajeNo.style.display = "none";
+
+    } else {
+
+        formulario.style.display = "none";
+        mensajeNo.style.display = "block";
+
+    }
+}
+
+
+function agregarCancion() {
+
+    const cancion = document.getElementById("cancion").value.trim();
+
+    if (cancion === "") {
+
+        alert("Escribí una canción primero ❤️");
+
+        return;
+    }
+
+    alert(
+        "¡Gracias! 🎵\n\n" +
+        "Anotamos tu canción:\n" +
+        cancion
+    );
+
+    document.getElementById("cancion").value = "";
+}

@@ -617,14 +617,16 @@ h1 {
 }
 /* ===== NOMBRES DE LA PAREJA ===== */
 
+/* ===== NOMBRES - ESTILO BODA ===== */
+
 .pantalla h1 {
-    font-family: "Georgia", serif;
+    font-family: Georgia, serif;
     font-size: clamp(3rem, 10vw, 6rem);
     font-weight: 400;
     letter-spacing: 3px;
     margin: 0;
-    color: #f5e9d8;
-    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.6);
+    color: #b8955a;
+    text-shadow: 0 2px 8px rgba(184, 149, 90, 0.25);
 }
 /* ===== ANIMACIÓN DE ENTRADA ===== */
 

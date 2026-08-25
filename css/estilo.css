@@ -954,3 +954,37 @@ background: linear-gradient(
     opacity: 1;
     letter-spacing: 3px;
 }
+/* ========================================
+   BIENVENIDA - ESTILO CASAMIENTO
+======================================== */
+
+.bienvenida {
+    background:
+        linear-gradient(
+            180deg,
+            #f8f4ec 0%,
+            #fffefc 100%
+        );
+    color: #5f5548;
+}
+
+.bienvenida-pequeno {
+    color: #a8895b;
+    opacity: 1;
+    letter-spacing: 4px;
+}
+
+.bienvenida h2 {
+    color: #9b7a4d;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.bienvenida-texto {
+    color: #62594e;
+}
+
+.bienvenida-final {
+    color: #9b7a4d;
+}

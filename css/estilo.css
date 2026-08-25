@@ -586,9 +586,9 @@ h1 {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.35),
-        rgba(0, 0, 0, 0.55)
+background: linear-gradient(
+        rgba(255, 255, 255, 0.08),
+        rgba(255, 255, 255, 0.02)
     );
     z-index: 0;
 }
@@ -598,22 +598,20 @@ h1 {
     z-index: 1;
 }
 /* ===== FONDO DE LA APERTURA ===== */
-
-/* ===== FONDO DEFINITIVO DE LA PORTADA ===== */
-
 .pantalla {
     background:
         radial-gradient(
             circle at center,
-            rgba(220, 202, 230, 0.65),
-            transparent 55%
+            rgba(235, 218, 242, 0.95),
+            transparent 60%
         ),
         linear-gradient(
             135deg,
-            #fffdfb 0%,
-            #f8f1fa 50%,
-            #eee3f2 100%
+            #ffffff 0%,
+            #f7eef9 45%,
+            #e8d8ee 100%
         );
+}
 }
 /* ===== NOMBRES DE LA PAREJA ===== */
 

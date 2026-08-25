@@ -122,7 +122,7 @@ function enviarWhatsApp() {
         "\n\nPreferencia alimentaria: " + comida +
         "\nCanción: " + cancion;
 
-    const numero = "5491126817356";
+    const numero = "5492604673886";
 
     const url =
         "https://wa.me/" + numero +

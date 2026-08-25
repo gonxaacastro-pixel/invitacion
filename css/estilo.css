@@ -2115,3 +2115,10 @@ background: linear-gradient(
     display: block;
     object-fit: cover;
 }
+@media (max-width: 600px) {
+
+    .foto {
+        height: 240px;
+    }
+
+}

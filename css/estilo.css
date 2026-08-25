@@ -599,10 +599,21 @@ h1 {
 }
 /* ===== FONDO DE LA APERTURA ===== */
 
+/* ===== FONDO DEFINITIVO DE LA PORTADA ===== */
+
 .pantalla {
     background:
-        radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 45%),
-        linear-gradient(135deg, #171313, #302323, #171313);
+        radial-gradient(
+            circle at center,
+            rgba(220, 202, 230, 0.65),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #fffdfb 0%,
+            #f8f1fa 50%,
+            #eee3f2 100%
+        );
 }
 /* ===== NOMBRES DE LA PAREJA ===== */
 

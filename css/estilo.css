@@ -632,3 +632,65 @@ h1 {
         transform: translateY(0);
     }
 }
+/* ===== NUESTRA HISTORIA ===== */
+
+.historia {
+    padding: 80px 20px;
+    text-align: center;
+    background: #f8f5f7;
+}
+
+.historia-contenido {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.historia-pequeno {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.historia h2 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.historia-texto {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.foto {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8dfea;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.foto span {
+    font-size: 35px;
+}
+
+@media (max-width: 600px) {
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .foto {
+        height: 260px;
+    }
+
+}

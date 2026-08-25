@@ -62,7 +62,45 @@ function mostrarFormulario(viene) {
 }
 
 
-function agregarCancion() {
+function enviarWhatsApp() {
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const cancion = document.getElementById("cancion").value.trim();
+
+    const comidaSeleccionada =
+        document.querySelector('input[name="comida"]:checked');
+
+    if (nombre === "") {
+        alert("Por favor, escribí tu nombre ❤️");
+        return;
+    }
+
+    if (!comidaSeleccionada) {
+        alert("Por favor, seleccioná una preferencia alimentaria ❤️");
+        return;
+    }
+
+    if (cancion === "") {
+        alert("Por favor, escribí una canción 🎵");
+        return;
+    }
+
+    const comida = comidaSeleccionada.value;
+
+    const mensaje =
+        "Hola ❤️ Soy " + nombre +
+        ". Confirmo que voy a la celebración de Nadia & Hugo." +
+        "\n\nPreferencia alimentaria: " + comida +
+        "\nCanción: " + cancion;
+
+    const numero = "5492604673886";
+
+    const url =
+        "https://wa.me/" + numero +
+        "?text=" + encodeURIComponent(mensaje);
+
+    window.open(url, "_blank");
+}
 
     const cancion = document.getElementById("cancion").value.trim();
 

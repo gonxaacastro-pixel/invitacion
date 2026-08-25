@@ -805,3 +805,15 @@ h1 {
     margin-left: auto;
     margin-right: auto;
 }
+/* ===== ANIMACIONES AL DESLIZAR ===== */
+
+.animar {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

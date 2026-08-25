@@ -2122,3 +2122,16 @@ background: linear-gradient(
     }
 
 }
+/* FECHA LÍMITE DE CONFIRMACIÓN */
+
+.fecha-limite {
+    margin: -15px auto 30px;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    color: #8f7448;
+    opacity: 0.85;
+}
+
+.fecha-limite strong {
+    font-weight: 600;
+}

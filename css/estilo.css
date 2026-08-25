@@ -26,15 +26,11 @@ body {
 .pantalla {
     min-height: 100vh;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 30px;
-
     position: relative;
     overflow: hidden;
 
@@ -50,41 +46,29 @@ body {
 .contenido {
     width: 100%;
     max-width: 700px;
-
     animation: aparecer 2s ease;
 }
 
 .pequeno {
     font-size: 12px;
-
     letter-spacing: 7px;
-
     margin-bottom: 30px;
-
     opacity: 0.7;
-
     text-transform: uppercase;
 }
 
 h1 {
     font-size: 58px;
-
     font-weight: normal;
-
     letter-spacing: 2px;
-
     margin-bottom: 25px;
 }
 
 .frase {
     font-size: 19px;
-
     line-height: 1.7;
-
     max-width: 550px;
-
     margin: 0 auto;
-
     opacity: 0.8;
 }
 
@@ -94,7 +78,6 @@ h1 {
 ======================================== */
 
 @keyframes aparecer {
-
     from {
         opacity: 0;
         transform: translateY(35px);
@@ -104,7 +87,37 @@ h1 {
         opacity: 1;
         transform: translateY(0);
     }
+}
 
+
+/* ========================================
+   DESLIZA
+======================================== */
+
+.desliza {
+    margin-top: 55px;
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.55;
+    animation: flotar 2s ease-in-out infinite;
+}
+
+.desliza span {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+@keyframes flotar {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
 }
 
 
@@ -115,15 +128,11 @@ h1 {
 .contador-seccion {
     min-height: 100vh;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 30px;
-
     background: #111;
 }
 
@@ -134,50 +143,36 @@ h1 {
 
 .contador-titulo {
     font-size: 20px;
-
     letter-spacing: 6px;
-
     margin-bottom: 45px;
-
     opacity: 0.8;
 }
 
 #contador {
     width: 100%;
-
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     gap: 35px;
-
     flex-wrap: wrap;
 }
 
 .tiempo {
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     min-width: 100px;
 }
 
 .tiempo span {
     font-size: 55px;
-
     font-weight: normal;
 }
 
 .tiempo small {
     margin-top: 8px;
-
     font-size: 11px;
-
     letter-spacing: 3px;
-
     opacity: 0.65;
 }
 
@@ -188,102 +183,13 @@ h1 {
 
 .evento-hoy {
     font-size: 28px;
-
     letter-spacing: 3px;
 }
 
 
 /* ========================================
-   CELULARES
+   BIENVENIDA
 ======================================== */
-
-@media (max-width: 600px) {
-
-    .pantalla {
-        padding: 25px;
-    }
-
-    h1 {
-        font-size: 42px;
-
-        line-height: 1.2;
-    }
-
-    .pequeno {
-        font-size: 10px;
-
-        letter-spacing: 5px;
-
-        margin-bottom: 25px;
-    }
-
-    .frase {
-        font-size: 17px;
-
-        line-height: 1.6;
-    }
-
-    .contador-seccion {
-        padding: 20px;
-    }
-
-    #contador {
-        gap: 20px;
-    }
-
-    .tiempo {
-        min-width: 70px;
-    }
-
-    .tiempo span {
-        font-size: 38px;
-    }
-
-    .contador-titulo {
-        font-size: 17px;
-
-        letter-spacing: 5px;
-
-        margin-bottom: 35px;
-    }
-
-}
-.desliza {
-    margin-top: 55px;
-
-    font-size: 11px;
-
-    letter-spacing: 4px;
-
-    text-transform: uppercase;
-
-    opacity: 0.55;
-
-    animation: flotar 2s ease-in-out infinite;
-}
-
-.desliza span {
-    display: block;
-
-    font-size: 20px;
-
-    margin-top: 10px;
-}
-
-
-@keyframes flotar {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(8px);
-    }
-
-}
-/* SECCIÓN DE BIENVENIDA */
 
 .bienvenida {
     min-height: 100vh;
@@ -291,7 +197,6 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 60px 25px;
-    box-sizing: border-box;
     background: #111111;
 }
 
@@ -324,6 +229,8 @@ h1 {
     font-weight: bold;
     margin-top: 30px;
 }
+
+
 /* ========================================
    CRONOGRAMA
 ======================================== */
@@ -331,21 +238,18 @@ h1 {
 .cronograma {
     min-height: 100vh;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 70px 25px;
-
     background: #151515;
 }
 
 .cronograma-contenido {
     width: 100%;
     max-width: 650px;
+    margin: 0 auto;
 }
 
 .cronograma-pequeno {
@@ -361,29 +265,24 @@ h1 {
 
 .hora {
     display: block;
-
     font-size: 27px;
-
     letter-spacing: 2px;
-
     margin-bottom: 10px;
 }
 
 .momento p {
     font-size: 19px;
-
     line-height: 1.6;
-
     margin: 0;
 }
 
 .momento small {
     font-size: 14px;
-
     opacity: 0.65;
-
     letter-spacing: 1px;
 }
+
+
 /* ========================================
    UBICACIÓN
 ======================================== */
@@ -391,15 +290,11 @@ h1 {
 .ubicacion {
     min-height: 100vh;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 70px 25px;
-
     background: #111111;
 }
 
@@ -435,19 +330,12 @@ h1 {
 
 .boton-mapa {
     display: inline-block;
-
     padding: 14px 25px;
-
     border: 1px solid rgba(255,255,255,0.4);
-
     color: white;
-
     text-decoration: none;
-
     font-size: 13px;
-
     letter-spacing: 2px;
-
     transition: 0.3s;
 }
 
@@ -455,6 +343,8 @@ h1 {
     background: white;
     color: #111;
 }
+
+
 /* ========================================
    CONFIRMACIÓN
 ======================================== */
@@ -462,15 +352,11 @@ h1 {
 .confirmacion {
     min-height: 100vh;
     width: 100%;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 70px 25px;
-
     background: #111111;
 }
 
@@ -478,6 +364,7 @@ h1 {
     width: 100%;
     max-width: 650px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .confirmacion-pequeno {
@@ -498,9 +385,14 @@ h1 {
     margin-bottom: 35px;
 }
 
+
+/* BOTONES SÍ / NO */
+
 .respuesta {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     flex-wrap: wrap;
 }
@@ -508,21 +400,13 @@ h1 {
 .respuesta button,
 .boton-cancion {
     padding: 14px 25px;
-
     background: transparent;
-
     border: 1px solid rgba(255,255,255,0.4);
-
     color: white;
-
     font-family: Georgia, serif;
-
     font-size: 13px;
-
     letter-spacing: 2px;
-
     cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -532,12 +416,17 @@ h1 {
     color: #111;
 }
 
-.formulario-oculto,
-.mensaje-oculto {
+
+/* ========================================
+   FORMULARIO
+======================================== */
+
+.formulario-oculto {
     display: none;
 }
 
 #formulario-asistencia {
+    width: 100%;
     margin-top: 50px;
 }
 
@@ -548,8 +437,10 @@ h1 {
 }
 
 .opciones-comida {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 12px;
     margin-bottom: 45px;
@@ -561,26 +452,18 @@ h1 {
 }
 
 .campo-cancion {
+    display: block;
     width: 100%;
     max-width: 450px;
-
+    margin: 0 auto 20px;
     padding: 15px;
-
     background: transparent;
-
     border: 1px solid rgba(255,255,255,0.3);
-
     color: white;
-
     font-family: Georgia, serif;
-
     font-size: 16px;
-
     text-align: center;
-
     outline: none;
-
-    margin-bottom: 20px;
 }
 
 .campo-cancion::placeholder {
@@ -591,59 +474,99 @@ h1 {
     display: block;
     margin: 0 auto;
 }
+
+
+/* ========================================
+   MENSAJE "NO PUEDO"
+======================================== */
+
 .mensaje-oculto {
-    width: 100%;
-    max-width: 650px;
-    margin: 40px auto 0;
-    text-align: center;
-    font-size: 18px;
+    display: none;
 }
 
-}
-/* CORRECCIÓN DE CENTRADO - CONFIRMACIÓN */
-
-.confirmacion,
-.confirmacion-contenido {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.confirmacion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.confirmacion-contenido {
-    max-width: 650px;
-}
-
-.respuesta {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.opciones-comida {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.campo-cancion {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 #mensaje-no {
     width: 100%;
     max-width: 650px;
     margin: 40px auto 0;
     text-align: center;
     font-size: 18px;
+}
+
+
+/* ========================================
+   CELULARES
+======================================== */
+
+@media (max-width: 600px) {
+
+    .pantalla {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+
+    .pequeno {
+        font-size: 10px;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
+    }
+
+    .frase {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .contador-seccion {
+        padding: 20px;
+    }
+
+    #contador {
+        gap: 20px;
+    }
+
+    .tiempo {
+        min-width: 70px;
+    }
+
+    .tiempo span {
+        font-size: 38px;
+    }
+
+    .contador-titulo {
+        font-size: 17px;
+        letter-spacing: 5px;
+        margin-bottom: 35px;
+    }
+
+    .bienvenida h2 {
+        font-size: 34px;
+    }
+
+    .bienvenida-texto {
+        font-size: 18px;
+    }
+
+    .cronograma,
+    .ubicacion,
+    .confirmacion {
+        padding: 60px 20px;
+    }
+
+    .cronograma-pequeno,
+    .ubicacion-pequeno,
+    .confirmacion-pequeno {
+        font-size: 12px;
+    }
+
+    .ubicacion h2,
+    .confirmacion h2 {
+        font-size: 32px;
+    }
+
+    .momento p {
+        font-size: 18px;
+    }
 }

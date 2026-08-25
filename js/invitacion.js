@@ -130,3 +130,33 @@ function enviarWhatsApp() {
 
     window.open(url, "_blank");
 }
+/* ========================================
+   REGALO
+======================================== */
+
+function mostrarRegalo() {
+
+    const datos =
+        document.getElementById("datos-regalo");
+
+    if (datos.style.display === "block") {
+
+        datos.style.display = "none";
+
+    } else {
+
+        datos.style.display = "block";
+
+    }
+}
+
+
+function copiarAlias() {
+
+    const alias =
+        document.getElementById("alias-mp").textContent;
+
+    navigator.clipboard.writeText(alias);
+
+    alert("Alias copiado ❤️");
+}

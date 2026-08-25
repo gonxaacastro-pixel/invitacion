@@ -694,3 +694,11 @@ h1 {
     }
 
 }
+.historia {
+    display: block !important;
+    min-height: 500px;
+    padding: 80px 20px;
+    background: #e8dfea !important;
+    color: #000 !important;
+    text-align: center;
+}

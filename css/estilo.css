@@ -1115,3 +1115,129 @@ background: linear-gradient(
     }
 
 }
+/* =================================
+   SECCIÓN D — UBICACIÓN
+   ================================= */
+
+.ubicacion {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+    box-sizing: border-box;
+}
+
+.ubicacion-contenido {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Texto pequeño */
+
+.ubicacion-pequeno {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+}
+
+/* Título */
+
+.ubicacion h2 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    margin: 0 0 35px;
+}
+
+/* Nombre del salón */
+
+.ubicacion-nombre {
+    font-size: 1.35rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* Dirección */
+
+.ubicacion-direccion {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+/* Botón del mapa */
+
+.boton-mapa {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.boton-mapa:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Animación */
+
+.ubicacion.animar .ubicacion-contenido {
+    animation: aparecerUbicacion 1.2s ease forwards;
+}
+
+@keyframes aparecerUbicacion {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* Celulares */
+
+@media (max-width: 600px) {
+
+    .ubicacion {
+        padding: 60px 18px;
+    }
+
+    .ubicacion h2 {
+        font-size: 1.85rem;
+        line-height: 1.25;
+    }
+
+    .ubicacion-nombre {
+        font-size: 1.15rem;
+    }
+
+    .ubicacion-direccion {
+        font-size: 0.95rem;
+    }
+
+    .boton-mapa {
+        padding: 13px 22px;
+        font-size: 0.82rem;
+    }
+
+}

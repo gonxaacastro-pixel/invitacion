@@ -591,10 +591,14 @@ h1 {
     display: block;
     margin: 0 auto;
 }
-
 .mensaje-oculto {
-    margin-top: 40px;
+    display: none;
+    width: 100%;
+    margin: 40px auto 0;
+    text-align: center;
     font-size: 18px;
+}
+
 }
 /* CORRECCIÓN DE CENTRADO - CONFIRMACIÓN */
 

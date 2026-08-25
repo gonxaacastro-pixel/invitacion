@@ -817,3 +817,41 @@ h1 {
     opacity: 1;
     transform: translateY(0);
 }
+/* ===== ANIMACIÓN INTERNA DE LAS SECCIONES ===== */
+
+.animar > * {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animar.visible > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Aparición escalonada */
+
+.animar.visible > *:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.animar.visible > *:nth-child(2) {
+    transition-delay: 0.25s;
+}
+
+.animar.visible > *:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.animar.visible > *:nth-child(4) {
+    transition-delay: 0.55s;
+}
+
+.animar.visible > *:nth-child(5) {
+    transition-delay: 0.7s;
+}
+
+.animar.visible > *:nth-child(6) {
+    transition-delay: 0.85s;
+}

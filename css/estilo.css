@@ -921,3 +921,36 @@ background: linear-gradient(
     color: #806e54;
     opacity: 0.75;
 }
+/* ========================================
+   CONTADOR - ESTILO CASAMIENTO
+======================================== */
+
+.contador-seccion {
+    background:
+        linear-gradient(
+            180deg,
+            #fffefc 0%,
+            #f8f4ec 100%
+        );
+    color: #5f5548;
+}
+
+.contador-titulo {
+    color: #a8895b;
+    opacity: 1;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+
+.tiempo span {
+    color: #9b7a4d;
+    font-family: Georgia, serif;
+    font-weight: 400;
+    text-shadow: 0 1px 2px rgba(255,255,255,0.8);
+}
+
+.tiempo small {
+    color: #75695b;
+    opacity: 1;
+    letter-spacing: 3px;
+}

@@ -1896,3 +1896,206 @@ background: linear-gradient(
     }
 
 }
+/* ==========================================
+   ESTÉTICA DE BODA — SECCIONES RESTANTES
+========================================== */
+
+/* CRONOGRAMA */
+
+.cronograma {
+    background:
+        linear-gradient(
+            180deg,
+            #fffefc 0%,
+            #f8f4ec 100%
+        );
+    color: #5f5548;
+}
+
+.cronograma-pequeno {
+    color: #a8895b;
+}
+
+.hora {
+    color: #9b7a4d;
+}
+
+.momento p {
+    color: #62594e;
+}
+
+.momento small {
+    color: #75695b;
+}
+
+.momento:not(:last-child)::after {
+    background: rgba(168, 137, 91, 0.35);
+}
+
+
+/* UBICACIÓN */
+
+.ubicacion {
+    background:
+        linear-gradient(
+            180deg,
+            #f8f4ec 0%,
+            #fffefc 100%
+        );
+    color: #5f5548;
+}
+
+.ubicacion-pequeno {
+    color: #a8895b;
+}
+
+.ubicacion h2 {
+    color: #9b7a4d;
+}
+
+.ubicacion-nombre {
+    color: #62594e;
+}
+
+.ubicacion-direccion {
+    color: #75695b;
+}
+
+.boton-mapa {
+    color: #8f7448;
+    border-color: rgba(168, 137, 91, 0.5);
+}
+
+.boton-mapa:hover {
+    background: #a8895b;
+    color: white;
+    border-color: #a8895b;
+}
+
+
+/* REGALOS */
+
+.regalo {
+    background:
+        linear-gradient(
+            180deg,
+            #fffefc 0%,
+            #f8f4ec 100%
+        );
+    color: #5f5548;
+}
+
+.regalo-pequeno {
+    color: #a8895b;
+}
+
+.regalo h2 {
+    color: #9b7a4d;
+}
+
+.regalo-texto,
+.regalo-final {
+    color: #62594e;
+}
+
+.boton-regalo,
+.boton-copiar {
+    color: #8f7448;
+    border-color: rgba(168, 137, 91, 0.5);
+}
+
+.boton-regalo:hover,
+.boton-copiar:hover {
+    background: #a8895b;
+    color: white;
+    border-color: #a8895b;
+}
+
+.datos-regalo {
+    background: rgba(168, 137, 91, 0.06);
+    border-color: rgba(168, 137, 91, 0.25);
+}
+
+.alias {
+    background: rgba(168, 137, 91, 0.08);
+}
+
+
+/* CONFIRMACIÓN */
+
+.confirmacion {
+    background:
+        linear-gradient(
+            180deg,
+            #f8f4ec 0%,
+            #fffefc 100%
+        );
+    color: #5f5548;
+}
+
+.confirmacion-pequeno {
+    color: #a8895b;
+}
+
+.confirmacion h2 {
+    color: #9b7a4d;
+}
+
+.confirmacion-texto {
+    color: #62594e;
+}
+
+.respuesta button {
+    color: #8f7448;
+    border-color: rgba(168, 137, 91, 0.5);
+}
+
+.respuesta button:hover {
+    background: #a8895b;
+    color: white;
+    border-color: #a8895b;
+}
+
+.formulario-oculto {
+    background: rgba(168, 137, 91, 0.05);
+    border-color: rgba(168, 137, 91, 0.25);
+}
+
+.opciones-comida label {
+    background: rgba(168, 137, 91, 0.06);
+}
+
+.opciones-comida label:hover {
+    background: rgba(168, 137, 91, 0.12);
+}
+
+.campo-cancion {
+    color: #5f5548;
+    background: rgba(168, 137, 91, 0.04);
+    border-color: rgba(168, 137, 91, 0.3);
+}
+
+.campo-cancion:focus {
+    border-color: #a8895b;
+    background: rgba(168, 137, 91, 0.08);
+}
+
+.campo-cancion::placeholder {
+    color: #75695b;
+}
+
+.boton-cancion {
+    color: #8f7448;
+    border-color: rgba(168, 137, 91, 0.5);
+}
+
+.boton-cancion:hover {
+    background: #a8895b;
+    color: white;
+    border-color: #a8895b;
+}
+
+.mensaje-oculto {
+    background: rgba(168, 137, 91, 0.05);
+    border-color: rgba(168, 137, 91, 0.25);
+}

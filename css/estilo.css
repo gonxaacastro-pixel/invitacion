@@ -570,3 +570,30 @@ h1 {
         font-size: 18px;
     }
 }
+/* ===== PANTALLA DE APERTURA ===== */
+
+.pantalla {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pantalla::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.55)
+    );
+    z-index: 0;
+}
+
+.pantalla > * {
+    position: relative;
+    z-index: 1;
+}

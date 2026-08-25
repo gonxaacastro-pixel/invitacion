@@ -702,3 +702,73 @@ h1 {
     color: #000 !important;
     text-align: center;
 }
+/* ===== REGALO ===== */
+
+.regalo {
+    padding: 80px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.regalo-contenido {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.regalo-pequeno {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.regalo h2 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.regalo-texto {
+    line-height: 1.8;
+    margin: 10px auto;
+}
+
+.regalo-final {
+    margin: 30px auto;
+    font-family: Georgia, serif;
+}
+
+.boton-regalo,
+.boton-copiar {
+    border: none;
+    padding: 14px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.datos-regalo {
+    display: none;
+    margin-top: 30px;
+}
+
+.alias {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    background: #f5f0f6;
+}
+
+.alias span {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.alias strong {
+    font-size: 18px;
+    letter-spacing: 1px;
+}

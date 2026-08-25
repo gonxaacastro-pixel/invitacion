@@ -1,4 +1,4 @@
-const fechaEvento = new Date("2027-05-15T21:00:00");
+const fechaEvento = new Date("2026-10-17T12:00:00");
 
 function actualizarContador() {
 
@@ -43,10 +43,19 @@ function actualizarContador() {
 actualizarContador();
 
 setInterval(actualizarContador, 1000);
+
+
+/* ========================================
+   CONFIRMACIÓN
+======================================== */
+
 function mostrarFormulario(viene) {
 
-    const formulario = document.getElementById("formulario-asistencia");
-    const mensajeNo = document.getElementById("mensaje-no");
+    const formulario =
+        document.getElementById("formulario-asistencia");
+
+    const mensajeNo =
+        document.getElementById("mensaje-no");
 
     if (viene) {
 
@@ -62,30 +71,50 @@ function mostrarFormulario(viene) {
 }
 
 
+/* ========================================
+   WHATSAPP
+======================================== */
+
 function enviarWhatsApp() {
 
-    const nombre = document.getElementById("nombre").value.trim();
-    const cancion = document.getElementById("cancion").value.trim();
+    const nombre =
+        document.getElementById("nombre").value.trim();
+
+    const cancion =
+        document.getElementById("cancion").value.trim();
 
     const comidaSeleccionada =
-        document.querySelector('input[name="comida"]:checked');
+        document.querySelector(
+            'input[name="comida"]:checked'
+        );
 
     if (nombre === "") {
+
         alert("Por favor, escribí tu nombre ❤️");
+
         return;
     }
 
     if (!comidaSeleccionada) {
-        alert("Por favor, seleccioná una preferencia alimentaria ❤️");
+
+        alert(
+            "Por favor, seleccioná una preferencia alimentaria ❤️"
+        );
+
         return;
     }
 
     if (cancion === "") {
-        alert("Por favor, escribí una canción 🎵");
+
+        alert(
+            "Por favor, escribí una canción 🎵"
+        );
+
         return;
     }
 
-    const comida = comidaSeleccionada.value;
+    const comida =
+        comidaSeleccionada.value;
 
     const mensaje =
         "Hola ❤️ Soy " + nombre +
@@ -100,22 +129,4 @@ function enviarWhatsApp() {
         "?text=" + encodeURIComponent(mensaje);
 
     window.open(url, "_blank");
-}
-
-    const cancion = document.getElementById("cancion").value.trim();
-
-    if (cancion === "") {
-
-        alert("Escribí una canción primero ❤️");
-
-        return;
-    }
-
-    alert(
-        "¡Gracias! 🎵\n\n" +
-        "Anotamos tu canción:\n" +
-        cancion
-    );
-
-    document.getElementById("cancion").value = "";
 }

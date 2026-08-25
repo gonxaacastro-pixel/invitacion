@@ -2,41 +2,7 @@
 <html lang="es">
 
 <head>
-<style>
-#pantallaSobre {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #f5eee8;
-    z-index: 999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.sobre-prueba {
-    width: 280px;
-    height: 180px;
-    background: #ffffff;
-    border: 2px solid #c9aaa0;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 60px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-    cursor: pointer;
-}
-
-.sobre-prueba p {
-    font-size: 15px;
-    color: #6d5656;
-    letter-spacing: 2px;
-}
-</style>
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,146 +10,178 @@
     <title>Nadia & Hugo | Nuestra boda</title>
 
     <link rel="stylesheet" href="css/estilo.css">
-<style>
 
-    /* PANTALLA DEL SOBRE */
+    <style>
 
-    #pantallaSobre {
-        position: fixed;
-        inset: 0;
-        z-index: 99999;
-        background: #f5eee8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: opacity 1s ease, visibility 1s ease;
-    }
+        /* =========================
+           SOBRE DE ENTRADA
+        ========================= */
 
-    #pantallaSobre.oculto {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-    }
-
-    .sobre-contenedor {
-        text-align: center;
-        cursor: pointer;
-    }
-
-    .sobre {
-        position: relative;
-        width: 280px;
-        height: 190px;
-        margin: auto;
-        perspective: 800px;
-        filter: drop-shadow(0 15px 20px rgba(0,0,0,0.18));
-    }
-
-    .cuerpo-sobre {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #fffaf5;
-        border-radius: 4px;
-        overflow: hidden;
-    }
-
-    .cuerpo-sobre::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        border-left: 140px solid transparent;
-        border-right: 140px solid transparent;
-        border-bottom: 100px solid #eadfd6;
-    }
-
-    .cuerpo-sobre::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        border-left: 140px solid #f1e7df;
-        border-top: 95px solid transparent;
-    }
-
-    .solapa {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 3;
-        width: 0;
-        height: 0;
-        border-left: 140px solid transparent;
-        border-right: 140px solid transparent;
-        border-top: 105px solid #e5d7cc;
-        transform-origin: top center;
-        transition: transform 0.9s ease;
-    }
-
-    .sello {
-        position: absolute;
-        z-index: 5;
-        top: 78px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        background: #b78b8b;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 17px;
-        font-weight: bold;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-
-    .texto-sobre {
-        margin-top: 30px;
-        color: #6d5656;
-        font-size: 16px;
-        letter-spacing: 1px;
-        animation: aparecer 2s infinite alternate;
-    }
-
-    @keyframes aparecer {
-        from {
-            opacity: 0.5;
-        }
-
-        to {
+        #pantallaSobre {
+            position: fixed;
+            inset: 0;
+            z-index: 999999;
+            background: #f5eee8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             opacity: 1;
+            visibility: visible;
+            transition: opacity 1s ease, visibility 1s ease;
         }
-    }
 
-    /* ANIMACIÓN AL ABRIR */
+        #pantallaSobre.oculto {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
 
-    #pantallaSobre.abriendo .solapa {
-        transform: rotateX(180deg);
-    }
+        .sobre-contenedor {
+            text-align: center;
+            cursor: pointer;
+        }
 
-    #pantallaSobre.abriendo .sobre {
-        transform: scale(1.05);
-        transition: transform 0.9s ease;
-    }
+        .sobre {
+            position: relative;
+            width: 280px;
+            height: 190px;
+            margin: auto;
+            filter: drop-shadow(0 15px 20px rgba(0,0,0,0.18));
+        }
 
-</style>
+        .cuerpo-sobre {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fffaf5;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .cuerpo-sobre::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-left: 140px solid transparent;
+            border-right: 140px solid transparent;
+            border-bottom: 100px solid #eadfd6;
+        }
+
+        .cuerpo-sobre::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-left: 140px solid #f1e7df;
+            border-top: 95px solid transparent;
+        }
+
+        .solapa {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            width: 0;
+            height: 0;
+            border-left: 140px solid transparent;
+            border-right: 140px solid transparent;
+            border-top: 105px solid #e5d7cc;
+            transform-origin: top center;
+            transition: transform 0.9s ease;
+        }
+
+        .sello {
+            position: absolute;
+            z-index: 5;
+            top: 78px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background: #b78b8b;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .texto-sobre {
+            margin-top: 30px;
+            color: #6d5656;
+            font-size: 16px;
+            letter-spacing: 1px;
+            animation: aparecer 2s infinite alternate;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0.5;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animación de apertura */
+
+        #pantallaSobre.abriendo .solapa {
+            transform: rotateX(180deg);
+        }
+
+        #pantallaSobre.abriendo .sobre {
+            transform: scale(1.05);
+            transition: transform 0.9s ease;
+        }
+
+    </style>
+
 </head>
 
 <body>
-        </div>
 
-        <p class="texto-sobre">
-            💌 Tocá el sobre para abrir
-        </p>
+    <!-- =========================
+         SOBRE DE ENTRADA
+    ========================= -->
+
+    <div id="pantallaSobre">
+
+        <div class="sobre-contenedor" onclick="abrirInvitacion()">
+
+            <div class="sobre">
+
+                <div class="solapa"></div>
+
+                <div class="cuerpo-sobre">
+
+                    <div class="sello">
+                        N ♥ H
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p class="texto-sobre">
+                💌 Tocá el sobre para abrir
+            </p>
+
+        </div>
 
     </div>
 
-</div>
+
+    <!-- =========================
+         PORTADA
+    ========================= -->
+
     <section class="pantalla">
 
         <div class="contenido">
@@ -210,7 +208,9 @@
     </section>
 
 
-    <!-- CONTADOR -->
+    <!-- =========================
+         CONTADOR
+    ========================= -->
 
     <section class="contador-seccion animar">
 
@@ -248,380 +248,446 @@
 
     </section>
 
-<!-- BIENVENIDA -->
 
-<section class="bienvenida animar">
+    <!-- =========================
+         BIENVENIDA
+    ========================= -->
 
-    <div class="bienvenida-contenido">
+    <section class="bienvenida animar">
 
-        <p class="bienvenida-pequeno">
-            SHH... 🤫
-        </p>
+        <div class="bienvenida-contenido">
 
-        <h2>
-            NADIA Y HUGO SE CASAN
-        </h2>
+            <p class="bienvenida-pequeno">
+                SHH... 🤫
+            </p>
 
-        <p class="bienvenida-texto">
-            Tenemos algo muy especial que contarte...
-            y queremos festejarlo junto a las personas
-            que más quieren.
-        </p>
+            <h2>
+                NADIA Y HUGO SE CASAN
+            </h2>
 
-        <p class="bienvenida-final">
-            ¡Es una sorpresa! ❤️
-        </p>
+            <p class="bienvenida-texto">
+                Tenemos algo muy especial que contarte...
+                y queremos festejarlo junto a las personas
+                que más quieren.
+            </p>
 
-    </div>
-
-</section>
-</section>
-    <!-- UBICACIÓN -->
-<!-- NUESTRA HISTORIA -->
-
-<section class="historia animar">
-
-    <div class="historia-contenido">
-
-        <p class="historia-pequeno">
-            NUESTRA HISTORIA
-        </p>
-
-        <h2>
-            MOMENTOS QUE NOS UNEN
-        </h2>
-
-        <p class="historia-texto">
-            Cada fotografía guarda un pedacito de nuestra historia.
-            Momentos, risas y recuerdos que nos trajeron hasta acá
-            y que queremos seguir compartiendo con ustedes. ❤️
-        </p>
-<div class="galeria">
-
-    <div class="foto foto-1">
-        <img src="imagen1.jpg" alt="Foto de Nadia y Hugo">
-    </div>
-
-    <div class="foto foto-2">
-        <img src="imagen2.jpg" alt="Foto de Nadia y Hugo">
-    </div>
-
-    <div class="foto foto-3">
-        <img src="imagen3.jpg" alt="Foto de Nadia y Hugo">
-    </div>
-
-    <div class="foto foto-4">
-        <img src="imagen4.jpg" alt="Foto de Nadia y Hugo">
-    </div>
-
-</div>
-      
-    </div>
-
-</section>
-</section>
-<section class="ubicacion animar">
-
-    <div class="ubicacion-contenido">
-
-        <p class="ubicacion-pequeno">
-            EL LUGAR
-        </p>
-
-        <h2>
-            ¿DÓNDE NOS ENCONTRAMOS?
-        </h2>
-
-        <p class="ubicacion-nombre">
-            Salón de Eventos San Rafael
-        </p>
-
-        <p class="ubicacion-direccion">
-            Las Vírgenes 200<br>
-            San Rafael, Mendoza
-        </p>
-
-        <a
-            class="boton-mapa"
-            href="https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n%20de%20Eventos%20San%20Rafael%2C%20Las%20V%C3%ADrgenes%20200%2C%20San%20Rafael%2C%20Mendoza"
-            target="_blank"
-            rel="noopener noreferrer">
-            📍 VER EN EL MAPA
-        </a>
-
-    </div>
-
-</section>
-    <!-- CRONOGRAMA -->
-
-<section class="cronograma animar">
-
-    <div class="cronograma-contenido">
-
-        <p class="cronograma-pequeno">
-            ASÍ VAMOS A CELEBRAR
-        </p>
-
-        <div class="momento">
-
-            <span class="hora">12:00 hs</span>
-
-            <p>
-                Llegada de los invitados
+            <p class="bienvenida-final">
+                ¡Es una sorpresa! ❤️
             </p>
 
         </div>
 
-        <div class="momento">
+    </section>
 
-            <span class="hora">12:30 hs</span>
 
-            <p>
-                🎉 ¡Llegan Nadia & Hugo!
-                <br>
-                <small>Y comienza la sorpresa</small>
+    <!-- =========================
+         NUESTRA HISTORIA
+    ========================= -->
+
+    <section class="historia animar">
+
+        <div class="historia-contenido">
+
+            <p class="historia-pequeno">
+                NUESTRA HISTORIA
             </p>
 
-        </div>
+            <h2>
+                MOMENTOS QUE NOS UNEN
+            </h2>
 
-        <div class="momento">
-
-            <span class="hora">13:00 hs</span>
-
-            <p>
-                🍽️ Almuerzo
+            <p class="historia-texto">
+                Cada fotografía guarda un pedacito de nuestra historia.
+                Momentos, risas y recuerdos que nos trajeron hasta acá
+                y que queremos seguir compartiendo con ustedes. ❤️
             </p>
 
-        </div>
+            <div class="galeria">
 
-        <div class="momento">
+                <div class="foto foto-1">
+                    <img src="imagen1.jpg" alt="Foto de Nadia y Hugo">
+                </div>
 
-            <span class="hora">18:00 hs</span>
+                <div class="foto foto-2">
+                    <img src="imagen2.jpg" alt="Foto de Nadia y Hugo">
+                </div>
 
-            <p>
-                ❤️ Cierre de la celebración
-            </p>
+                <div class="foto foto-3">
+                    <img src="imagen3.jpg" alt="Foto de Nadia y Hugo">
+                </div>
 
-        </div>
+                <div class="foto foto-4">
+                    <img src="imagen4.jpg" alt="Foto de Nadia y Hugo">
+                </div>
 
-    </div>
-
-</section>
-    <!-- REGALO -->
-
-<section class="regalo animar">
-
-    <div class="regalo-contenido">
-
-        <p class="regalo-pequeno">
-            UN PEQUEÑO GESTO, UN GRAN SUEÑO
-        </p>
-
-        <h2>
-            SI QUERÉS HACERNOS UN REGALO
-        </h2>
-
-        <p class="regalo-texto">
-            Lo más importante para nosotros es poder compartir
-            este día con ustedes.
-        </p>
-
-        <p class="regalo-texto">
-            Si además desean hacernos un regalo,
-            pueden ayudarnos a seguir construyendo
-            nuestros sueños juntos.
-        </p>
-
-        <p class="regalo-final">
-            Gracias por acompañarnos en este nuevo capítulo
-            de nuestra historia. ❤️
-        </p>
-
-        <button class="boton-regalo" onclick="mostrarRegalo()">
-            💜 QUIERO HACERLES UN REGALO
-        </button>
-
-        <div id="datos-regalo" class="datos-regalo">
-
-            <p>
-                Si querés hacernos un regalo,
-                podés hacerlo a través de Mercado Pago.
-            </p>
-
-            <div class="alias">
-                <span>ALIAS</span>
-                <strong id="alias-mp">PONER-ALIAS</strong>
             </div>
 
-            <button class="boton-copiar" onclick="copiarAlias()">
-                📋 COPIAR ALIAS
-            </button>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         UBICACIÓN
+    ========================= -->
+
+    <section class="ubicacion animar">
+
+        <div class="ubicacion-contenido">
+
+            <p class="ubicacion-pequeno">
+                EL LUGAR
+            </p>
+
+            <h2>
+                ¿DÓNDE NOS ENCONTRAMOS?
+            </h2>
+
+            <p class="ubicacion-nombre">
+                Salón de Eventos San Rafael
+            </p>
+
+            <p class="ubicacion-direccion">
+                Las Vírgenes 200<br>
+                San Rafael, Mendoza
+            </p>
+
+            <a
+                class="boton-mapa"
+                href="https://www.google.com/maps/search/?api=1&query=Sal%C3%B3n%20de%20Eventos%20San%20Rafael%2C%20Las%20V%C3%ADrgenes%20200%2C%20San%20Rafael%2C%20Mendoza"
+                target="_blank"
+                rel="noopener noreferrer">
+                📍 VER EN EL MAPA
+            </a>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
-    <!-- CONFIRMACIÓN -->
 
-<section class="confirmacion animar">
+    <!-- =========================
+         CRONOGRAMA
+    ========================= -->
 
-    <div class="confirmacion-contenido">
+    <section class="cronograma animar">
 
-        <p class="confirmacion-pequeno">
-            QUEREMOS SABER DE VOS
-        </p>
+        <div class="cronograma-contenido">
 
-        <h2>
-            ¿NOS ACOMPAÑÁS?
-        </h2>
+            <p class="cronograma-pequeno">
+                ASÍ VAMOS A CELEBRAR
+            </p>
 
-        <p class="confirmacion-texto">
-            Confirmá tu asistencia a la celebración.
-        </p>
+            <div class="momento">
 
-        <div class="respuesta">
+                <span class="hora">
+                    12:00 hs
+                </span>
 
-            <button onclick="mostrarFormulario(true)">
-                ❤️ SÍ, VOY
-            </button>
+                <p>
+                    Llegada de los invitados
+                </p>
 
-            <button onclick="mostrarFormulario(false)">
-                😢 NO PUEDO
-            </button>
+            </div>
+
+            <div class="momento">
+
+                <span class="hora">
+                    12:30 hs
+                </span>
+
+                <p>
+                    🎉 ¡Llegan Nadia & Hugo!
+                    <br>
+                    <small>
+                        Y comienza la sorpresa
+                    </small>
+                </p>
+
+            </div>
+
+            <div class="momento">
+
+                <span class="hora">
+                    13:00 hs
+                </span>
+
+                <p>
+                    🍽️ Almuerzo
+                </p>
+
+            </div>
+
+            <div class="momento">
+
+                <span class="hora">
+                    18:00 hs
+                </span>
+
+                <p>
+                    ❤️ Cierre de la celebración
+                </p>
+
+            </div>
 
         </div>
 
-        <div id="formulario-asistencia" class="formulario-oculto">
+    </section>
 
-    <p class="pregunta">
-        ¿CUÁL ES TU NOMBRE?
-    </p>
 
-    <input
-        type="text"
-        id="nombre"
-        class="campo-cancion"
-        placeholder="Escribí tu nombre..."
-    >
+    <!-- =========================
+         REGALO
+    ========================= -->
 
-    <p class="pregunta">
-        ¿TENÉS ALGUNA PREFERENCIA ALIMENTARIA?
-    </p>
+    <section class="regalo animar">
 
-    <div class="opciones-comida">
+        <div class="regalo-contenido">
 
-        <label>
-            <input type="radio" name="comida" value="Nada en especial">
-            Nada en especial
-        </label>
+            <p class="regalo-pequeno">
+                UN PEQUEÑO GESTO, UN GRAN SUEÑO
+            </p>
 
-        <label>
-            <input type="radio" name="comida" value="Celíaco/a">
-            🌾 Celíaco/a
-        </label>
+            <h2>
+                SI QUERÉS HACERNOS UN REGALO
+            </h2>
 
-        <label>
-            <input type="radio" name="comida" value="Vegetariano/a">
-            🌱 Vegetariano/a
-        </label>
+            <p class="regalo-texto">
+                Lo más importante para nosotros es poder compartir
+                este día con ustedes.
+            </p>
 
-        <label>
-            <input type="radio" name="comida" value="Vegano/a">
-            🌿 Vegano/a
-        </label>
+            <p class="regalo-texto">
+                Si además desean hacernos un regalo,
+                pueden ayudarnos a seguir construyendo
+                nuestros sueños juntos.
+            </p>
 
-    </div>
+            <p class="regalo-final">
+                Gracias por acompañarnos en este nuevo capítulo
+                de nuestra historia. ❤️
+            </p>
 
-   <p class="pregunta">
-    🎵 AYUDANOS A ARMAR LA PLAYLIST
-</p>
+            <button
+                class="boton-regalo"
+                onclick="mostrarRegalo()">
+                💜 QUIERO HACERLES UN REGALO
+            </button>
 
-<p class="confirmacion-texto">
-    ¿Qué canción no puede faltar en esta celebración?
-</p>
+            <div id="datos-regalo" class="datos-regalo">
 
-<input
-    type="text"
-    id="cancion"
-    class="campo-cancion"
-    placeholder="Escribí una canción..."
->
-    <button class="boton-cancion" onclick="enviarWhatsApp()">
-        📱 CONFIRMAR POR WHATSAPP
-    </button>
+                <p>
+                    Si querés hacernos un regalo,
+                    podés hacerlo a través de Mercado Pago.
+                </p>
 
-</div>
+                <div class="alias">
 
-        <div id="mensaje-no" class="mensaje-oculto">
-            💕 Gracias por avisarnos.
+                    <span>
+                        ALIAS
+                    </span>
+
+                    <strong id="alias-mp">
+                        PONER-ALIAS
+                    </strong>
+
+                </div>
+
+                <button
+                    class="boton-copiar"
+                    onclick="copiarAlias()">
+                    📋 COPIAR ALIAS
+                </button>
+
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
+
+    <!-- =========================
+         CONFIRMACIÓN
+    ========================= -->
+
+    <section class="confirmacion animar">
+
+        <div class="confirmacion-contenido">
+
+            <p class="confirmacion-pequeno">
+                QUEREMOS SABER DE VOS
+            </p>
+
+            <h2>
+                ¿NOS ACOMPAÑÁS?
+            </h2>
+
+            <p class="confirmacion-texto">
+                Confirmá tu asistencia a la celebración.
+            </p>
+
+            <div class="respuesta">
+
+                <button onclick="mostrarFormulario(true)">
+                    ❤️ SÍ, VOY
+                </button>
+
+                <button onclick="mostrarFormulario(false)">
+                    😢 NO PUEDO
+                </button>
+
+            </div>
+
+
+            <div
+                id="formulario-asistencia"
+                class="formulario-oculto">
+
+                <p class="pregunta">
+                    ¿CUÁL ES TU NOMBRE?
+                </p>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    class="campo-cancion"
+                    placeholder="Escribí tu nombre..."
+                >
+
+
+                <p class="pregunta">
+                    ¿TENÉS ALGUNA PREFERENCIA ALIMENTARIA?
+                </p>
+
+                <div class="opciones-comida">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="comida"
+                            value="Nada en especial">
+                        Nada en especial
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="comida"
+                            value="Celíaco/a">
+                        🌾 Celíaco/a
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="comida"
+                            value="Vegetariano/a">
+                        🌱 Vegetariano/a
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="comida"
+                            value="Vegano/a">
+                        🌿 Vegano/a
+                    </label>
+
+                </div>
+
+
+                <p class="pregunta">
+                    🎵 AYUDANOS A ARMAR LA PLAYLIST
+                </p>
+
+                <p class="confirmacion-texto">
+                    ¿Qué canción no puede faltar en esta celebración?
+                </p>
+
+                <input
+                    type="text"
+                    id="cancion"
+                    class="campo-cancion"
+                    placeholder="Escribí una canción..."
+                >
+
+                <button
+                    class="boton-cancion"
+                    onclick="enviarWhatsApp()">
+                    📱 CONFIRMAR POR WHATSAPP
+                </button>
+
+            </div>
+
+
+            <div
+                id="mensaje-no"
+                class="mensaje-oculto">
+                💕 Gracias por avisarnos.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         JAVASCRIPT EXISTENTE
+    ========================= -->
+
     <script src="js/invitacion.js"></script>
+
+
+    <!-- =========================
+         MÚSICA
+    ========================= -->
+
+    <audio id="musicaFondo" loop>
+
+        <source
+            src="musica/Ed%20Sheeran%20-%20photograph%20%20sub%20espa%C3%B1ol.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    <!-- =========================
+         ABRIR INVITACIÓN
+    ========================= -->
+
     <script>
-function abrirInvitacion() {
 
-    const pantalla = document.getElementById("pantallaSobre");
-    const musica = document.getElementById("musicaFondo");
+        function abrirInvitacion() {
 
-    pantalla.style.opacity = "0";
+            const pantalla =
+                document.getElementById("pantallaSobre");
 
-    if (musica) {
-        musica.play();
-    }
+            const musica =
+                document.getElementById("musicaFondo");
 
-    setTimeout(function() {
-        pantalla.style.display = "none";
-    }, 1000);
-}
-</script>
-    <script>
-function abrirInvitacion() {
 
-    const pantalla = document.getElementById("pantallaSobre");
-    const musica = document.getElementById("musicaFondo");
+            /* Abrir el sobre */
 
-    // Ocultar el sobre
-    pantalla.style.opacity = "0";
+            pantalla.classList.add("abriendo");
 
-    // Empezar la música
-    if (musica) {
-        musica.play();
-    }
 
-    // Sacar completamente la pantalla del sobre
-    setTimeout(function() {
-        pantalla.style.display = "none";
-    }, 1000);
-}
-</script>
-<audio id="musicaFondo" loop>
-    <source src="musica/Ed%20Sheeran%20-%20photograph%20%20sub%20espa%C3%B1ol.mp3" type="audio/mpeg">
-</audio>
+            /* Comenzar música */
 
-<script>
+            if (musica) {
+                musica.play().catch(function() {});
+            }
 
-    function abrirInvitacion() {
 
-        const pantalla = document.getElementById("pantallaSobre");
-        const musica = document.getElementById("musicaFondo");
+            /* Sacar el sobre */
 
-        // Animación de apertura
-        pantalla.classList.add("abriendo");
+            setTimeout(function() {
 
-        // Comienza la música
-        musica.play();
+                pantalla.classList.add("oculto");
 
-        // Después de la animación, desaparece el sobre
-        setTimeout(function() {
-            pantalla.classList.add("oculto");
-        }, 1000);
-    }
+            }, 1000);
 
-</script>
+        }
+
+    </script>
+
 </body>
 
 </html>

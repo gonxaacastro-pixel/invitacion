@@ -544,9 +544,24 @@
 </audio>
 
 <script>
-    document.addEventListener("click", function() {
-        document.getElementById("musicaFondo").play();
-    }, { once: true });
+
+    function abrirInvitacion() {
+
+        const pantalla = document.getElementById("pantallaSobre");
+        const musica = document.getElementById("musicaFondo");
+
+        // Animación de apertura
+        pantalla.classList.add("abriendo");
+
+        // Comienza la música
+        musica.play();
+
+        // Después de la animación, desaparece el sobre
+        setTimeout(function() {
+            pantalla.classList.add("oculto");
+        }, 1000);
+    }
+
 </script>
 </body>
 

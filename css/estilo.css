@@ -1585,3 +1585,315 @@ background: linear-gradient(
     }
 
 }
+/* =================================
+   SECCIÓN CONFIRMACIÓN
+   ================================= */
+
+.confirmacion {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.confirmacion-contenido {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+/* Texto pequeño */
+
+.confirmacion-pequeno {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+/* Título */
+
+.confirmacion h2 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin: 0 0 20px;
+}
+
+/* Texto */
+
+.confirmacion-texto {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0 auto 30px;
+}
+
+/* =================================
+   BOTONES SÍ / NO
+   ================================= */
+
+.respuesta {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.respuesta button {
+    min-width: 150px;
+
+    padding: 14px 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+
+    background: transparent;
+
+    font: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.respuesta button:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* =================================
+   FORMULARIO
+   ================================= */
+
+.formulario-oculto {
+    display: none;
+
+    max-width: 520px;
+
+    margin: 35px auto 0;
+    padding: 28px;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    box-sizing: border-box;
+
+    text-align: left;
+}
+
+/* Preguntas */
+
+.pregunta {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+
+    margin: 25px 0 10px;
+
+    text-align: center;
+}
+
+.formulario-oculto .pregunta:first-child {
+    margin-top: 0;
+}
+
+/* =================================
+   CAMPOS
+   ================================= */
+
+.campo-cancion {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: inherit;
+
+    font: inherit;
+    font-size: 0.9rem;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.campo-cancion:focus {
+    border-color: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.campo-cancion::placeholder {
+    opacity: 0.55;
+}
+
+/* =================================
+   OPCIONES DE COMIDA
+   ================================= */
+
+.opciones-comida {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.opciones-comida label {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 13px;
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.04);
+
+    cursor: pointer;
+
+    font-size: 0.9rem;
+
+    transition: background 0.3s ease;
+}
+
+.opciones-comida label:hover {
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.opciones-comida input {
+    accent-color: currentColor;
+}
+
+/* =================================
+   BOTÓN WHATSAPP
+   ================================= */
+
+.boton-cancion {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: inherit;
+
+    font: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.boton-cancion:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* =================================
+   MENSAJE "NO PUEDO"
+   ================================= */
+
+.mensaje-oculto {
+    display: none;
+
+    margin: 30px auto 0;
+
+    padding: 20px;
+
+    max-width: 450px;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: rgba(255, 255, 255, 0.05);
+
+    text-align: center;
+
+    line-height: 1.6;
+}
+
+/* =================================
+   ANIMACIÓN
+   ================================= */
+
+.confirmacion.animar .confirmacion-contenido {
+    animation: aparecerConfirmacion 1.2s ease forwards;
+}
+
+@keyframes aparecerConfirmacion {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =================================
+   CELULARES
+   ================================= */
+
+@media (max-width: 600px) {
+
+    .confirmacion {
+        padding: 60px 18px;
+    }
+
+    .confirmacion h2 {
+        font-size: 1.9rem;
+    }
+
+    .confirmacion-texto {
+        font-size: 0.95rem;
+    }
+
+    .respuesta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .respuesta button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .formulario-oculto {
+        padding: 22px 18px;
+    }
+
+}

@@ -585,6 +585,23 @@ function abrirInvitacion() {
     const pantalla = document.getElementById("pantallaSobre");
     const musica = document.getElementById("musicaFondo");
 
+    pantalla.style.opacity = "0";
+
+    if (musica) {
+        musica.play();
+    }
+
+    setTimeout(function() {
+        pantalla.style.display = "none";
+    }, 1000);
+}
+</script>
+    <script>
+function abrirInvitacion() {
+
+    const pantalla = document.getElementById("pantallaSobre");
+    const musica = document.getElementById("musicaFondo");
+
     // Ocultar el sobre
     pantalla.style.opacity = "0";
 

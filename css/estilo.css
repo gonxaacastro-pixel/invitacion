@@ -597,3 +597,10 @@ h1 {
     position: relative;
     z-index: 1;
 }
+/* ===== FONDO DE LA APERTURA ===== */
+
+.pantalla {
+    background:
+        radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 45%),
+        linear-gradient(135deg, #171313, #302323, #171313);
+}

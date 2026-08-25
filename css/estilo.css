@@ -988,3 +988,130 @@ background: linear-gradient(
 .bienvenida-final {
     color: #9b7a4d;
 }
+/* ================================
+   NUESTRA HISTORIA
+   ================================ */
+
+.historia {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 20px;
+    box-sizing: border-box;
+}
+
+.historia-contenido {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Título pequeño */
+
+.historia-pequeno {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+/* Título principal */
+
+.historia h2 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    margin: 0 0 22px;
+}
+
+/* Texto */
+
+.historia-texto {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* ================================
+   GALERÍA
+   ================================ */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.foto {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-sizing: border-box;
+}
+
+.foto span {
+    font-size: 2rem;
+    opacity: 0.6;
+}
+
+/* ================================
+   ANIMACIÓN
+   ================================ */
+
+.historia.animar .historia-contenido {
+    animation: aparecerHistoria 1.2s ease forwards;
+}
+
+@keyframes aparecerHistoria {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ================================
+   CELULARES
+   ================================ */
+
+@media (max-width: 600px) {
+
+    .historia {
+        padding: 60px 18px;
+    }
+
+    .historia h2 {
+        font-size: 1.9rem;
+    }
+
+    .historia-texto {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .galeria {
+        gap: 12px;
+    }
+
+}

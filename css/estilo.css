@@ -1365,3 +1365,223 @@ background: linear-gradient(
     }
 
 }
+/* =================================
+   SECCIÓN REGALOS
+   ================================= */
+
+.regalo {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    box-sizing: border-box;
+}
+
+.regalo-contenido {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* Texto pequeño */
+
+.regalo-pequeno {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+/* Título */
+
+.regalo h2 {
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    margin: 0 0 30px;
+}
+
+/* Textos */
+
+.regalo-texto {
+    max-width: 620px;
+    margin: 0 auto 18px;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Texto final */
+
+.regalo-final {
+    max-width: 600px;
+    margin: 30px auto;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* =================================
+   BOTÓN PRINCIPAL
+   ================================= */
+
+.boton-regalo {
+    margin-top: 15px;
+
+    padding: 14px 28px;
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 30px;
+
+    background: transparent;
+
+    font: inherit;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.boton-regalo:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* =================================
+   DATOS DEL REGALO
+   ================================= */
+
+.datos-regalo {
+    display: none;
+
+    max-width: 450px;
+
+    margin: 30px auto 0;
+    padding: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    box-sizing: border-box;
+}
+
+.datos-regalo p {
+    margin: 0 0 20px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Alias */
+
+.alias {
+    padding: 18px;
+    margin-bottom: 18px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.alias span {
+    display: block;
+
+    font-size: 0.7rem;
+    letter-spacing: 3px;
+
+    margin-bottom: 8px;
+
+    opacity: 0.7;
+}
+
+.alias strong {
+    display: block;
+
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+
+    word-break: break-word;
+}
+
+/* Botón copiar */
+
+.boton-copiar {
+    padding: 12px 24px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 25px;
+
+    background: transparent;
+
+    font: inherit;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.boton-copiar:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* =================================
+   ANIMACIÓN
+   ================================= */
+
+.regalo.animar .regalo-contenido {
+    animation: aparecerRegalo 1.2s ease forwards;
+}
+
+@keyframes aparecerRegalo {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =================================
+   CELULARES
+   ================================= */
+
+@media (max-width: 600px) {
+
+    .regalo {
+        padding: 60px 18px;
+    }
+
+    .regalo h2 {
+        font-size: 1.85rem;
+        line-height: 1.3;
+    }
+
+    .regalo-texto {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .boton-regalo {
+        padding: 13px 22px;
+        font-size: 0.78rem;
+    }
+
+    .datos-regalo {
+        padding: 20px;
+    }
+
+}

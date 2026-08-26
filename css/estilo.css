@@ -2240,3 +2240,39 @@ background: linear-gradient(
 .detalle strong {
     font-weight: 600;
 }
+@media (max-width: 600px) {
+
+    .detalles {
+        padding: 80px 22px;
+    }
+
+    .detalles h2 {
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .detalles-pequeno {
+        font-size: 10px;
+        letter-spacing: 3px;
+    }
+
+    .detalle {
+        margin-bottom: 45px;
+        padding-bottom: 35px;
+    }
+
+    .detalle-icono {
+        font-size: 27px;
+    }
+
+    .detalle h3 {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .detalle p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}

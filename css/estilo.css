@@ -2135,3 +2135,42 @@ background: linear-gradient(
 .fecha-limite strong {
     font-weight: 600;
 }
+/* ========================================
+   CONTADOR DE PERSONAS
+======================================== */
+
+.contador-personas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0 25px;
+}
+
+.contador-personas button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    background: #b78b8b;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contador-personas button:hover {
+    transform: scale(1.08);
+}
+
+.contador-personas button:active {
+    transform: scale(0.95);
+}
+
+.contador-personas span {
+    min-width: 35px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #6d5656;
+}

@@ -74,7 +74,29 @@ function mostrarFormulario(viene) {
 /* ========================================
    WHATSAPP
 ======================================== */
+/* ========================================
+   CANTIDAD DE PERSONAS
+======================================== */
 
+let cantidadPersonas = 1;
+
+function cambiarCantidad(valor) {
+
+    cantidadPersonas += valor;
+
+    // Mínimo 1 persona
+    if (cantidadPersonas < 1) {
+        cantidadPersonas = 1;
+    }
+
+    // Máximo 10 personas
+    if (cantidadPersonas > 10) {
+        cantidadPersonas = 10;
+    }
+
+    document.getElementById("cantidad-personas").textContent =
+        cantidadPersonas;
+}
 function enviarWhatsApp() {
 
     const nombre =
@@ -116,11 +138,12 @@ function enviarWhatsApp() {
     const comida =
         comidaSeleccionada.value;
 
-    const mensaje =
-        "Hola ❤️ Soy " + nombre +
-        ". Confirmo que voy a la celebración de Nadia & Hugo." +
-        "\n\nPreferencia alimentaria: " + comida +
-        "\nCanción: " + cancion;
+   const mensaje =
+    "Hola ❤️ Soy " + nombre +
+    ". Confirmo que voy a la celebración de Nadia & Hugo." +
+    "\n\nCantidad de personas: " + cantidadPersonas +
+    "\nPreferencia alimentaria: " + comida +
+    "\nCanción: " + cancion;
 
     const numero = "5492604673886";
 

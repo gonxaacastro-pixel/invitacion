@@ -2174,3 +2174,69 @@ background: linear-gradient(
     font-weight: bold;
     color: #6d5656;
 }
+/* ========================================
+   DETALLES IMPORTANTES
+======================================== */
+
+.detalles {
+    width: 100%;
+    padding: 110px 20px;
+    background: #f8f5f1;
+    box-sizing: border-box;
+}
+
+.detalles-contenido {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.detalles-pequeno {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.detalles h2 {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 65px;
+}
+
+.detalle {
+    max-width: 600px;
+    margin: 0 auto 55px;
+    padding-bottom: 45px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.detalle:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.detalle-icono {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.detalle h3 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.detalle p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 8px auto;
+    max-width: 550px;
+}
+
+.detalle strong {
+    font-weight: 600;
+}
